@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="webmtg"
+  name="magicweb"
   id="myeclipse.1374467345013"
-  context-root="/webmtg"
+  context-root="/magicweb"
   j2ee-spec="6.0"
-  archive="webmtg.war">
+  archive="magicweb.war">
   <attributes>
     <attribute name="webrootdir" value="src/main/webapp" />
   </attributes>

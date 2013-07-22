@@ -27,8 +27,7 @@ public class MagicT2 implements GameFlow {
 
 	@Override
 	public boolean loadGame() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
