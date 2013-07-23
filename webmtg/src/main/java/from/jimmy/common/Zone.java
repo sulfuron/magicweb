@@ -9,7 +9,6 @@ public interface Zone {
 	//统计
 	Integer countInField(Type type);
 	
-	
 	//进入此区域时产生的效应
 	Effact enter();
 	Effact leave();

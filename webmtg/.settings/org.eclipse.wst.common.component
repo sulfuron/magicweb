@@ -3,6 +3,7 @@
     <wb-module deploy-name="magicweb">
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <property name="context-root" value="/magicweb"/>
         <property name="java-output-path" value="/magicweb/src/main/webapp/WEB-INF/classes"/>
     </wb-module>

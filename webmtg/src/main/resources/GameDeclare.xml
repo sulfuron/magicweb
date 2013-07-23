@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game name='mtg'>
+	<initzones>
+		<zone name="battlefield" class="from.jimmy.mtg.common.zone.BattlefieldZone">
+		</zone>
+		<zone name="hand" class="from.jimmy.mtg.common.zone.HandZone">
+		</zone>
+		<zone name="discarded" class="from.jimmy.mtg.common.zone.DiscardedZone">
+		</zone>
+		<zone name="liberary" class="from.jimmy.mtg.common.zone.LiberaryZone">
+		</zone>
+		<zone name="playerPanel" class="from.jimmy.mtg.common.zone.PlayerPanel"></zone>
+	</initzones>
+	<phases>
+		<phase order="1" class="from.jimmy.mtg.common.phase.BeginPhase">
+			<step order="1" class="from.jimmy.mtg.common.steps.UntapStep"></step>
+			<step order="2" class="from.jimmy.mtg.common.steps.UpkeepStep"></step>
+			<step order="3" class="from.jimmy.mtg.common.steps.DrawStep"></step>
+		</phase>
+		<phase order="2" class="from.jimmy.mtg.common.phase.MainPhase" />
+		<phase order="3" class="from.jimmy.mtg.common.phase.CombatPhase">
+			<step order="1" class="from.jimmy.mtg.common.steps.BeginningofCombatStep"></step>
+			<step order="2" class="from.jimmy.mtg.common.steps.DeclareAttackerStep"></step>
+			<step order="3" class="from.jimmy.mtg.common.steps.DeclareBlockerStep"></step>
+			<step order="4" class="from.jimmy.mtg.common.steps.CombatDamageStep"></step>
+			<step order="5" class="from.jimmy.mtg.common.steps.EndofCombatStep"></step>
+		</phase>
+		<phase order="4" class="from.jimmy.mtg.common.phase.MainPhase" />
+		<phase order="5" class="from.jimmy.mtg.common.phase.EndingPhase">
+			<step order="1" class="from.jimmy.mtg.common.steps.EndStep"></step>
+			<step order="2" class="from.jimmy.mtg.common.steps.CleanupStep"></step>
+		</phase>
+	</phases>
+</game>
